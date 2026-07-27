@@ -197,15 +197,16 @@
   .subnav-chips a{min-height:40px;padding:8px 14px;border-radius:999px;font-size:15px;color:var(--muted);white-space:nowrap;display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--card)}
   .subnav-chips a:hover{color:var(--pine);border-color:var(--pine)}
   section[id]{scroll-margin-top:66px}
-  /* balanced, centered editorial columns (fixes left-hugging / empty right side) */
-  .eyebrow{justify-content:center}
-  h2.big{text-align:center}
-  .intro{text-align:center;margin-left:auto;margin-right:auto}
-  #dream .lead{text-align:center;max-width:60ch;margin-left:auto;margin-right:auto}
-  .story p{text-align:center;max-width:60ch;margin-left:auto;margin-right:auto}
-  .rnote{text-align:center}
-  .review .q{text-align:center}
-  .pull{text-align:center;border-left:0;padding:8px 0;margin-left:auto;margin-right:auto;max-width:34ch}
+  /* ===== Equal (justified) text on a consistent left edge — NOT centred ===== */
+  .eyebrow{justify-content:flex-start}
+  h2.big{text-align:left}
+  .lead,.intro{text-align:justify;max-width:none;margin-left:0;margin-right:0}
+  #dream .lead{text-align:justify;max-width:none;margin-left:0;margin-right:0}
+  .story p{text-align:justify;max-width:none;margin-left:0;margin-right:0}
+  .pull{text-align:left;border-left:3px solid var(--ember);padding:6px 0 6px 22px;margin:26px 0;max-width:46ch}
+  .rnote{text-align:justify}
+  .review .q{text-align:justify}
+  .vcard p,.pcard>p{text-align:justify}
 </style>
 
 <div class="hero">
