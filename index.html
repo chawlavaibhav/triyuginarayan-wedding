@@ -54,7 +54,7 @@ body { margin: 0; background: radial-gradient(120% 80% at 50% 0%, #2a0811, var(-
 .door::before, .door::after { content: ""; position: absolute; inset: 18px 14px; border: 1px solid rgba(201,161,91,.55); }
 .door::after { inset: 24px 20px; border-color: rgba(201,161,91,.25); }
 .door .arch { position: absolute; left: 50%; top: 9%; width: 70%; transform: translateX(-50%); opacity: .5; }
-.door.l .knock, .door.r .knock { position: absolute; top: 74%; width: 10px; height: 46px; border: 1px solid var(--gold); border-radius: 6px; transform: translateY(-50%); }
+.door.l .knock, .door.r .knock { position: absolute; top: 86%; width: 10px; height: 46px; border: 1px solid var(--gold); border-radius: 6px; transform: translateY(-50%); }
 .door.l .knock { right: 14px; } .door.r .knock { left: 14px; }
 .opened .door.l { transform: rotateY(-108deg); }
 .opened .door.r { transform: rotateY(108deg); }
@@ -191,7 +191,7 @@ body { margin: 0; background: radial-gradient(120% 80% at 50% 0%, #2a0811, var(-
 .lines p { margin: 0; font-size: 21px; font-style: italic; color: #FFF1DA; line-height: 1.45; }
 
 /* thank you */
-.mono { width: 138px; height: 138px; display: grid; place-items: center; filter: drop-shadow(0 6px 18px rgba(0,0,0,.45)); }
+.mono { width: 138px; height: 138px; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle, rgba(62,10,22,.92) 60%, rgba(62,10,22,.75)); box-shadow: 0 8px 26px rgba(0,0,0,.45); }
 .mono svg { width: 138px; height: 138px; }
 .thanks { font-family: var(--script); font-size: clamp(56px, 17vw, 76px); color: var(--gold-hi); margin: 0; font-weight: 400; line-height: 1.05; }
 .sign { font-family: var(--sans); font-size: 13px; letter-spacing: .28em; color: #F7E8C8; text-transform: uppercase; }
